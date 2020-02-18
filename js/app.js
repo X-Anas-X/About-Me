@@ -1,3 +1,4 @@
+// dont forget to modify your README.md file to describe your project with the new features you are adding.
 'use strict';
 
 var userName = prompt ('Hello there! please enter your name');
