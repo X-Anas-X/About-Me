@@ -1,110 +1,98 @@
 'use strict';
-var name = prompt ("Hello there! please enter your name");
-alert("Hello " + name);
-console.log(name)
 
-var earth = prompt ("Do you think the earth is flat?").toUpperCase();
+var userName = prompt ('Hello there! please enter your name');
+alert('Hello ' + userName);
+console.log(userName);
 
-switch (earth) {
-    case 'yes':
-        alert("NO! it is round! go read more >:(");
-    break;
-    case 'no':
-        alert("correct answer, I'm proud of you :)");
-    break;
-    
-    default:
-        alert("just yes or no please");
-    break;
+var earth = prompt ('Do you think that i beleive the earth is flat?');
+
+switch (earth.toLowerCase()) {
+case 'yes':
+case 'y':
+  alert('NO! it is round! I love and believe in astronomy science >:(');
+  break;
+case 'no':
+case 'n':
+  alert ('correct answer, Im proud of you :)');
+  break;
+
+default:
+  alert('just yes or no please');
+  break;
 }
 console.log(earth);
 
-var movies = prompt ("Do you watch movies?").toUpperCase();
+var movies = prompt ('Do you think I watch movies?');
 
-switch (movies) {
-    case 'yes':
-        alert("you should share with me your favourite gener later!");
-    break;
-    case 'no':
-        alert("now that's sad, you should try watching some!");
-    break;
-    
-    default:
-        alert("yes or no questions.. remember??");
-    break;
+switch (movies.toLowerCase()) {
+case 'yes':
+case 'y':
+  alert('correct, you should share with me your favourite gener later!');
+  break;
+case 'no':
+case 'n':
+  alert('now that is sad, who doesn\'t watch movies even?!');
+  break;
+
+default:
+  alert('yes or no questions.. remember??');
+  break;
 }
 console.log(movies);
 
-var quiz = prompt("Do you think i'm a good student?").toUpperCase();
-switch (quiz) {
-    case 'yes':
-        alert("aww thank you, I really am trying my best!");
-    break;
-    case 'no':
-        alert("oof- okay... I guess :(");
-    break;
-    
-    default:
-        alert("you can't avoid this question!");
-    break;
+var quiz = prompt('I believe that i\'m a tryhard student, is that right?');
+
+switch (quiz.toUpperCase()) {
+case 'YES':
+case 'Y':
+  alert('aww thank you, I really am trying my best!');
+  break;
+case 'NO':
+case 'N':
+  alert('oof- okay... I guess i\'ll try more :(');
+  break;
+
+default:
+  alert('you can not avoid this question!');
+  break;
 }
 console.log(quiz);
 
-var grade = prompt("Am i getting a full mark on lab-02? (you can use yes/no/maybe)").toUpperCase();
-switch (grade) {
-    case 'yes':
-        alert("well of course, it's me after all B)");
-    break;
-    case 'no':
-        alert("I guess re-submitting is also an option (sorry)");
-    break;
-    case 'maybe':
-        alert("It was supposed to be a yes or no question (~˘▾˘)~");
-        break;
-    
-    default:
-        alert("you can't avoid this question!");
-    break;
+var grade = prompt('i think i\'m getting a full mark on lab-02, do you think that too?' , 'you can use yes/no/maybe');
+switch (grade.toUpperCase()) {
+case 'YES':
+case 'Y':
+  alert('well of course, it is me after all B)');
+  break;
+case 'NO':
+case 'N':
+  alert('I guess re-submitting is also an option (sorry)');
+  break;
+case 'MAYBE':
+  alert('It was supposed to be a yes or no question, LOL ');
+  break;
+
+default:
+  alert('you can not avoid this question!');
+  break;
 }
 console.log(grade);
 
-var early = prompt("Don't you think you should let us go home early today?").toUpperCase();
+var early = prompt('do you think i stay awake till after midnight?');
 
-
-
-switch (leave) {
-    case 'yes':
-        alert("oh wow! tell me during class so i could my pack my stuff ;)");
-        break;
-    case 'no':
-        alert("I knew you wouldn't let me :(");
-        default:
-            alert("avoiding now, ain't we?");
-        break;    
+switch (early.toLocaleUpperCase()) {
+case 'YES':
+case 'Y':
+  alert('oh wow! that is correct, im a night owl! ;)');
+  break;
+case 'NO':
+case 'N':
+  alert('wrong, i stay awake till 4 am or even 5 am every night');
+  break;
+default:
+  alert('avoiding now, ain\'t we?');
+  break;
 }
-console.log(leave);
+console.log(early);
 
-var pickNumber = prompt("I am thinking of a unmber from 1 to 3 and one of them is wrong").toLowerCase();
-
-switch (pickNumber) {
-    case '1':
-        alert("correct number!");
-    break;
-    case '2':
-        alert("correct number!");
-    break;
-    case '3':
-        alert("wrong number, you failed :P");
-    break;
-    default:
-        alert("I said between 1 and 3! read the question again >:(");
-    break;
-}
-console.log(pickNumber);
-
-var name = prompt ("Hello there! please enter your name");
-alert("Hello " + name);
-console.log(name);
-
-
-
+alert('welcome to my page ' + userName);
