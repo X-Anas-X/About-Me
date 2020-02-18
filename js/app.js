@@ -1,5 +1,7 @@
 // dont forget to modify your README.md file to describe your project with the new features you are adding.
 'use strict';
+var score = 0;
+
 
 var userName = prompt ('Hello there! please enter your name');
 alert('Hello ' + userName);
@@ -15,7 +17,9 @@ case 'y':
 case 'no':
 case 'n':
   alert ('correct answer, Im proud of you :)');
+  score++;
   break;
+
 
 default:
   alert('just yes or no please');
@@ -29,6 +33,7 @@ switch (movies.toLowerCase()) {
 case 'yes':
 case 'y':
   alert('correct, you should share with me your favourite gener later!');
+  score++;
   break;
 case 'no':
 case 'n':
@@ -47,6 +52,7 @@ switch (quiz.toUpperCase()) {
 case 'YES':
 case 'Y':
   alert('aww thank you, I really am trying my best!');
+  score++;
   break;
 case 'NO':
 case 'N':
@@ -64,6 +70,7 @@ switch (grade.toUpperCase()) {
 case 'YES':
 case 'Y':
   alert('well of course, it is me after all B)');
+  score++;
   break;
 case 'NO':
 case 'N':
@@ -85,6 +92,7 @@ switch (early.toLocaleUpperCase()) {
 case 'YES':
 case 'Y':
   alert('oh wow! that is correct, im a night owl! ;)');
+  score++;
   break;
 case 'NO':
 case 'N':
@@ -97,3 +105,86 @@ default:
 console.log(early);
 
 alert('welcome to my page ' + userName);
+
+var i;
+for (i = 0; i < 4; i++ ){
+  var num = prompt ('I\'m thinking of a number from 1 to 5 that is correct, can you guess the number?');
+  switch (num){
+  case '3':
+    alert ('correct!');
+    i = 4;
+    score++;
+    break;
+  case '2':
+  case '5':
+  case '31':
+  case '4':
+    alert ('wrong number! :P');
+    break;
+  default:
+    if (num > 5 || num < 10 ) {
+      alert ('High, do it again!');
+      console.log(num);
+    } else if (num > 10) {
+      alert('Too High, do it again!');
+      console.log(num);
+    }else if (num < 3 || num > 0) {
+      alert('Too Low, do it again');
+      console.log(num);
+    }else if (num < -5) {
+      alert('Too Low, do it again!');
+      console.log(num);
+
+    }
+  }
+} alert ('The correct answer was 3');
+
+
+
+var answer;
+var fruit = ['apple','strawberry','peach','banana','berry'];
+answer = prompt('what is my favourite fruit?', ' Possible answers: apple , strawberry , peach , banana , berry');
+for (var j = 0; j < 6 ; j++) {
+
+  if (fruit[0] === answer || fruit[1] === answer || fruit[2] === answer || fruit[3] === answer ||fruit[4] === answer){
+    alert('my favourite fruits are apple , strawberry , banana');
+    score++;
+    break;
+  }
+  else
+    prompt('Try again');
+}
+if(j === 6){
+
+  alert('you have tried too many times');
+}
+
+alert ('your score is ' + score);
+
+
+
+
+
+// it worked but not the way i wanted.
+// var fruit = ['apple','strawberry','peach','banana','berry'];
+// var myFavFruit = prompt('what is my favourite fruit?');
+// alert ('what are my favourite fruits?');
+
+// switch(myFavFruit){
+// case fruit[0]:
+// case fruit[1]:
+// case fruit[3]:
+//   alert ('correct!');
+//   j = 6;
+//   score++;
+//   break;
+// case fruit[2]:
+// case fruit[4]:
+//   alert ('wrong answer!');
+//   break;
+// default:
+//   alert('not an option!');
+//   break;
+// }
+// }
+
