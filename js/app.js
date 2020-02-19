@@ -5,8 +5,9 @@ var score = 0;
 
 var userName = prompt ('Hello there! please enter your name');
 alert('Hello ' + userName);
-console.log(userName);
+// console.log(userName);
 
+function myEarth(earth){
 var earth = prompt ('Do you think that i beleive the earth is flat?');
 
 switch (earth.toLowerCase()) {
@@ -25,7 +26,15 @@ default:
   alert('just yes or no please');
   break;
 }
-console.log(earth);
+}
+myEarth();
+
+
+
+
+// console.log(earth);
+
+function myMovies(movies){
 
 var movies = prompt ('Do you think I watch movies?');
 
@@ -43,8 +52,12 @@ case 'n':
 default:
   alert('yes or no questions.. remember??');
   break;
-}
-console.log(movies);
+}}
+myMovies();
+
+// console.log(movies);
+
+function myQuiz(quiz){
 
 var quiz = prompt('I believe that i\'m a tryhard student, is that right?');
 
@@ -62,9 +75,12 @@ case 'N':
 default:
   alert('you can not avoid this question!');
   break;
-}
-console.log(quiz);
+}}
+myQuiz();
 
+// console.log(quiz);
+
+function myGrade(grade){
 var grade = prompt('i think i\'m getting a full mark on lab-02, do you think that too?' , 'you can use yes/no/maybe');
 switch (grade.toUpperCase()) {
 case 'YES':
@@ -83,8 +99,12 @@ case 'MAYBE':
 default:
   alert('you can not avoid this question!');
   break;
-}
-console.log(grade);
+}}
+myGrade();
+
+// console.log(grade);
+
+function myEarly(early){
 
 var early = prompt('do you think i stay awake till after midnight?');
 
@@ -101,11 +121,14 @@ case 'N':
 default:
   alert('avoiding now, ain\'t we?');
   break;
-}
-console.log(early);
+}}
+myEarly();
+
+// console.log(early);
 
 alert('welcome to my page ' + userName);
 
+function myNum(num){
 var i;
 for (i = 0; i < 4; i++ ){
   var num = prompt ('I\'m thinking of a number from 1 to 5 that is correct, can you guess the number?');
@@ -124,22 +147,25 @@ for (i = 0; i < 4; i++ ){
   default:
     if (num > 5 || num < 10 ) {
       alert ('High, do it again!');
-      console.log(num);
+      // console.log(num);
     } else if (num > 10) {
       alert('Too High, do it again!');
-      console.log(num);
+      // console.log(num);
     }else if (num < 3 || num > 0) {
       alert('Too Low, do it again');
-      console.log(num);
+      // console.log(num);
     }else if (num < -5) {
       alert('Too Low, do it again!');
-      console.log(num);
+      // console.log(num);
 
     }
   }
-} alert ('The correct answer was 3');
+}}
+myNum();
 
+alert ('The correct answer was 3');
 
+function myAnswer(answer){
 
 var answer;
 var fruit = ['apple','strawberry','peach','banana','berry'];
@@ -157,7 +183,8 @@ for (var j = 0; j < 6 ; j++) {
 if(j === 6){
 
   alert('you have tried too many times');
-}
+}}
+myAnswer();
 
 alert ('your score is ' + score);
 
